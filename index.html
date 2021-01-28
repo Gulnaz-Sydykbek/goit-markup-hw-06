@@ -52,6 +52,55 @@
                     <button type="button" class="button" data-modal-open>Заказать услугу</button>
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
+                            <form class="form-field">
+                                <p class="form-paragraph">Оставьте свои данные, мы вам перезвоним</p>
+                                <ul class="list-no-style">
+                                    <li class="form-label-list">
+                                        <label class="form-label">
+                                            <span class="form-name">Имя</span>
+                                            <input type="text" name="user-name" class="form-input" />
+                                            <svg class="form-icon" width="18" height="18">
+                                                <use href="./img-svg/symbol-defs.svg#person-black"></use>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                    <li class="form-label-list">
+                                        <label class="form-label">
+                                            <span class="form-name">Телефон</span>
+                                            <input type="tel" name="tel" class="form-input" />
+                                            <svg class="form-icon" width="18" height="18">
+                                                <use href="./img-svg/symbol-defs.svg#phon-black"></use>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                    <li class="form-label-list">
+                                        <label class="form-label">
+                                            <span class="form-name">Почта</span>
+                                            <input type="email" name="mail" class="form-input" />
+                                            <svg class="form-icon" width="18" height="18">
+                                                <use href="./img-svg/symbol-defs.svg#email-black"></use>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                    <li class="form-label-list">
+                                        <label class="form-label">
+                                            <span class="form-name">Комментарий</span>
+                                            <textarea name="comment" placeholder="Введите текс" class="form-textarea"></textarea>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <label class="form-checkbox-label">
+                                    <input type="checkbox" name="agreement" value="agreement" class="form-checkbox" />
+                                    <span class="checkbox"></span>
+                                    <svg class="checkbox-icon" width="16" height="15">
+                                        <use href="./img-svg/symbol-defs.svg#icon-check"></use>
+                                    </svg>
+                                    <span class="checkbox-description">Соглашаюсь с рассылкой и принимаю<span class="checkbox-color">Условия договора</span></span>
+                                </label>
+                                <div class="form-button-position">
+                                    <button type="submit" class="form-button">Отправить</button>
+                                </div>
+                            </form>
                             <button type="button" class="close-button" data-modal-close>
                                 <svg class="close-vector" width="11" height="11">
                                     <use href="./img-svg/symbol-defs.svg#Vector"></use>
@@ -359,7 +408,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="second-footer-container">
                 <p class="join">присоединяйтесь</p>
                 <ul class="list-no-style icons-of-masters">
                     <li class="list-of-icons">
@@ -392,6 +441,14 @@
                     </li>
                 </ul>
             </div>
+            <form class="footer-form-field">
+                <p class="join">Подпишитесь на рассылку</p>
+                <input type="email" name="mail" placeholder="E-mail" class="footer-form-input" />
+                <button type="submit" class="footer-form-button">Подписаться</button>
+                <svg class="footer-button-icon" width="24" height="24">
+                    <use href="./img-svg/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </form>
         </div>
         <!-- /Контакты -->
     </footer>
