@@ -451,13 +451,15 @@ img {
 	overflow: hidden;
 }
 
-.form-checkbox:checked + .checkbox-description::before {
+.form-checkbox:checked + .checkbox-description::before,
+.form-checkbox:focus + .checkbox-description::before {
 	background-color: var(--dark-color);
 	border: transparent;
 	border-radius: 2px;
 }
 
-.form-checkbox:checked ~ .checkbox-icon {
+.form-checkbox:checked ~ .checkbox-icon,
+.form-checkbox:focus ~ .checkbox-icon {
 	fill: var(--second-color);
 }
 
